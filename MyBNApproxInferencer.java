@@ -44,10 +44,9 @@ public class  MyBNApproxInferencer {
                     assignment.set(r,o);
                     range = range + bn.getProb(r,assignment);
                     if(randomnum<=range) break;
-                    //System.out.println(range);
-                    //System.out.println(assignment+" "+bn.getProb(r,assignment)+" "+r.getDomain().size());
+                    
                 }
-                //System.out.println(randomnum+" range is "+range);
+               
             }
 
             boolean consistent = true;
@@ -71,11 +70,6 @@ public class  MyBNApproxInferencer {
         for(int i=0;i<domain.size();i++){
             distribution.put(domain.get(i),distributionarr[i]);
         }
-
-
-        //System.out.println(distributionarr[0]);
-        //System.out.println(distributionarr[1]);
-        //System.out.println(validsize);
         distribution.normalize();
         System.out.println(distribution);
         return distribution;
@@ -132,19 +126,13 @@ public class  MyBNApproxInferencer {
                 }
             }
 
-            //System.out.println(assignment);
+           
             distributionarr[getbin(X,assignment)]+=weight;
             validsize+=weight;
         }
 
 
         Distribution distribution = new Distribution();
-
-
-
-        //System.out.println(distributionarr[0]);
-        //System.out.println(distributionarr[1]);
-        //System.out.println(validsize);
 
         Domain domain = X.getDomain();
         for(int i=0;i<domain.size();i++){
