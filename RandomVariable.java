@@ -1,9 +1,4 @@
-/*
- * File: RandomVariable.java
- * Creator: George Ferguson
- * Created: Sun Mar 25 15:06:21 2012
- * Time-stamp: <Mon Mar 26 10:41:40 EDT 2012 ferguson>
- */
+
 
 package com.company;
 
